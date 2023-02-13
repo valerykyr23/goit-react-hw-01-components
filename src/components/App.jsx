@@ -9,6 +9,7 @@ export const App = () => {
       style={{
         height: '100vh',
         display: 'flex',
+        flexDirection: "column",
         justifyContent: 'center',
         alignItems: 'center',
         fontSize: 40,
@@ -23,10 +24,9 @@ export const App = () => {
   stats={user.stats}
       />
 
+<Statistics title="Upload stats" stats={data} />
 
       
-      <Statistics title="Upload stats" stats={data} />
-<Statistics stats={data} />
       
     </div>
   );
