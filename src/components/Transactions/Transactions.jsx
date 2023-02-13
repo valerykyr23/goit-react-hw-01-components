@@ -26,12 +26,15 @@ export const TransactionHistory = ({ items }) => {
 </table>
 }
 
-// {friends.map(({ avatar, name, isOnline, id }) => (
-//           <li className={css.item} key={id}>
-//             <span className={isOnline ? css.online : css.offline}>
-//               {isOnline}
-//             </span>
-//             <img className={css.avatar} src={avatar} alt={name} />
-//             <p className={css.name}>{name}</p>
-//           </li>
-//         ))}
+
+TransactionHistory.propTypes = {
+  
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      type: PropTypes.string.isRequired,
+      amount: PropTypes.number.isRequired,
+      currency: PropTypes.string.isRequired,
+    }).isRequired,
+  ).isRequired,
+};
