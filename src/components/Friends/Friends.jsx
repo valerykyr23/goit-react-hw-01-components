@@ -3,7 +3,7 @@ import css from "./Friends.module.css";
 
 
 export const FriendList = ({ friends }) => {
-    console.log(friends)
+
     
     return <div className={css.friends}> <ul className={css.friendList}>
         {friends.map(({ avatar, name, isOnline, id }) => (
