@@ -7,7 +7,8 @@ export const StatisticsContainer = styled.section`
     align-items: center;
     padding-top: 10px;
     box-shadow: 0 0 10px #c6cccced;
-    margin-left: 30px;`
+    margin-left: 30px;
+    `
 
 export const StatsTitle = styled.h2`
     font-weight: 700;
@@ -19,7 +20,8 @@ export const StatsList = styled.ul`
     width: 370px;
     display: flex;
     justify-content: space-evenly;
-    padding: 0;`
+    padding: 0;
+    `
 
 export const StatsItem = styled.li`
     display: flex;

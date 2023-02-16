@@ -1,11 +1,12 @@
 import styled from '@emotion/styled';
 
 export const FriendsContainer = styled.div`
-display: flex;
+    display: flex;
     align-items: center;
     margin-top: 30px;
     flex-direction: column;
-    width: 370px;`
+    width: 370px;
+    `
 
 
 export const FriendsList = styled.ul`
@@ -22,20 +23,6 @@ export const FriendsListItem = styled.li`
     box-shadow: 0px 0px 5px 0px #6b6b6bbf;
     margin-bottom: 10px;
     border-radius: 10px;`
-
-// export const FriendStatusOnline = styled.span`
-//     margin-right: 10px;
-//     width: 20px;
-//     height: 20px;
-//     border-radius: 50%;
-//     background-color: #0b970b;`
-
-// export const FriendStatusOffline = styled.span`
-//     margin-right: 10px;
-//     width: 20px;
-//     height: 20px;
-//     border-radius: 50%;
-//     background-color: #b32929;`
 
 export const FriendAvatar = styled.img`
     margin-right: 10px;

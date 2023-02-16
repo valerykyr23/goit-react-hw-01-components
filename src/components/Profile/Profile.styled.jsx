@@ -1,7 +1,8 @@
 import styled from '@emotion/styled';
 
 export const ProfileContainer = styled.div` 
-width: 1000px;
+    margin: 30px auto;
+    width: 1000px;
     background-color: #ffffff;
     display: flex;
     flex-direction: column;

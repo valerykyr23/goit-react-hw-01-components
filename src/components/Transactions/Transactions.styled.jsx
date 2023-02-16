@@ -1,32 +1,45 @@
 import styled from '@emotion/styled';
 
 export const TransactionsTable = styled.table`
-    margin-top: 30px;
-    margin-bottom: 30px;
-    box-shadow: 0 0 10px #c6cccced;
-    width: 370px;
-    border-spacing: 0;`
+  margin: 30px auto;
+  width: 600px;
+  border-radius: 4px;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  table-layout: fixed;
+  border-collapse: collapse;`
+  
+  
 
 export const TransactionsHeadRow = styled.tr` 
-    margin-bottom: 5px;
-    padding: 10px;`
+    
+    `
 
 export const TransactionsLabels = styled.th`
-    font-weight: 800;
-    font-size: 20px;
-    margin-bottom: 5px;
-    color: #524a4d;`
+
+    `
 
 export const TransactionValues = styled.td`
-    padding: 10px;
-    width: inherit;
-    font-weight: 700;
-    font-size: 15px;
-    color: #524a4d;
-    justify-content: center;`
+   text-transform: capitalize;
+    `
 
 export const TransactonTableRow = styled.tr`
-    display: flex;
-    justify-content: space-around;
-    border-bottom: solid 1px #c6cccce6;`
+background-color: #fff;
+&:nth-of-type(even) {
+  background-color: #ecf2f3;
+    `
 
+export const TableHeader = styled.thead`
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 30px;
+  background-color: #00bcd4;
+      `
+
+export const TableBody = styled.tbody`
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 30px;
+    `
