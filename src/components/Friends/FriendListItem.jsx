@@ -1,12 +1,11 @@
 import PropTypes from 'prop-types';
-import { FriendsListItem,FriendStatusOnline, FriendAvatar,FriendName } from "./Friends.styled";
+import { StatusItem, FriendAvatar,FriendName,FriendsListItem} from "./Friends.styled";
 
-export const FriendListItem = ({ avatar, name, isOnline }) => {
+export const FriendListItem = ({ avatar, name, isOnline}) => {
 
     return <FriendsListItem>
-            <FriendStatusOnline>
-              {isOnline}
-            </FriendStatusOnline>
+            <StatusItem status={isOnline}>
+            </StatusItem>
             <FriendAvatar src={avatar} alt={name} />
             <FriendName>{name}</FriendName>
           </FriendsListItem>
@@ -18,8 +17,3 @@ FriendListItem.propTypes = {
   isOnline: PropTypes.bool.isRequired,
 };
 
-/* <span className={isOnline ? css.online : css.offline}>
-              {isOnline}
-            </span> */
-
-            // FriendStatusOffline,
